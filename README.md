@@ -1,7 +1,7 @@
 # purescript-numerics
 
-[![Latest release](http://img.shields.io/github/release/purescript/purescript-numerics.svg)](https://github.com/Proclivis/purescript-numerics/releases)
-[![Build status](https://travis-ci.org/purescript/purescript-numerics.svg?branch=master)](https://travis-ci.org/purescript/purescript-numerics)
+[![Latest release](http://img.shields.io/github/release/Proclivis/purescript-numerics.svg)](https://github.com/Proclivis/purescript-numerics/releases)
+[![Build status](https://travis-ci.org/Proclivis/purescript-numerics.svg?branch=master)](https://travis-ci.org/Proclivis/purescript-numerics)
 
 Numeric types, think Haskell Num, Real, etc.
 
@@ -14,7 +14,8 @@ Numeric types, think Haskell Num, Real, etc.
 ```purescript
 import Data.Integral
 import Data.Word
-fromIntegral 4 .|. fromIntegral 2 :: Word8
+fromIntegral 4 .|. fromIntegral
+2 :: Word8
 Word8 0x06 (6u)
 ```
 
