@@ -1,4 +1,4 @@
-# purescript-word
+# purescript-numerics
 
 [![Latest release](http://img.shields.io/github/release/purescript/purescript-numerics.svg)](https://github.com/Proclivis/purescript-numerics/releases)
 [![Build status](https://travis-ci.org/purescript/purescript-numerics.svg?branch=master)](https://travis-ci.org/purescript/purescript-numerics)
