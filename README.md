@@ -1,51 +1,37 @@
-Existing types
-Data.Natural
-Data.Number
-Data.UInt
-Data.Int
-Data.Decimal
-Type.Quotient (class)
-Data.Ratio
-Data.Rational
+# purescript-word
 
-Conversions:
+[![Latest release](http://img.shields.io/github/release/purescript/purescript-numerics.svg)](https://github.com/Proclivis/purescript-numerics/releases)
+[![Build status](https://travis-ci.org/purescript/purescript-numerics.svg?branch=master)](https://travis-ci.org/purescript/purescript-numerics)
 
-Integer is transfer type
-toInteger (Integral)
-fromInteger (Num)
+Numeric types, think Haskell Num, Real, etc.
 
-Rational is transfer type
-toRational (Real)
-fromRational (Fractional)
+## Module documentation
 
-General functions:
+- [Published on Pursuit](http://pursuit.purescript.org/packages/purescript-numerics/)
 
-Transfer with Integer
-fromIntegral (Integral to Num)
-integralToNum (no loss)
-numToIntegral (loss)
+## Example with Word type
 
-Transfer with Rational (loss)
-realToFrac (Real to Fractional) (loss)
-fracToReal (Fractional to Real) (no loss)
+```purescript
+import Data.Integral
+import Data.Word
+fromIntegral 4 .|. fromIntegral 2 :: Word8
+Word8 0x06 (6u)
+```
 
-Discussion:
+## Installation and usage
+You can install this package via Bower. You will also need [BigInteger.js](https://github.com/peterolson/BigInteger.js), which can be installed via `npm`:
+```
+bower install purescript-numerics
+```
+For the browser, remember to bundle `BigInteger.min.js` with your code.
 
-Constraints can replace inheritance. So >= 0 for unsinged. a - trunc a = a for integral.
+## Development
+```
+bower install
+npm install
+```
+Then, use `pulp` to build, run tests and generate the documentation.
 
-This decision is a conceptual one, where you can classify numbers, or make them general and constrain them.
-Constratins require proofs, and classes require type checking.
-Constraints are more general. It may have faster run time if native types are used afterwards.
-Constraints allow arbitrary and flexible...
-But, types match existing taxanomy of number types.
+## Documentation
 
-It is strange that in Haskell Real only has integral division which does not include
-irational numbers when Reals are all rational and irational numbers. So it makes some
-sense to break with this.
-
-Rationals are different in that numbers are exact. Do we really care?
-
-Do we want NonFractional? These would just have law extensions on the classes about lossy
-and non-lossy conversions, and whether they truncate or round.
-
-Arguements around math library conversions vs classes is similar to constraints vs classes.
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-numerics).
