@@ -5,7 +5,7 @@ module Data.Integral
   , fromIntegral
   ) where
 
-import Prelude (id, (<<<), class EuclideanRing)
+import Prelude (identity, (<<<), class EuclideanRing)
 import Data.BigInt as BI
 import Data.Int as I
 import Data.Maybe (fromMaybe)
@@ -32,4 +32,4 @@ instance integralNumber :: Integral Number where
 
 -- | `Integral` instance for `BigInt`.
 instance integralBigInt :: Integral BI.BigInt where
-    toBigInt = id
+    toBigInt = identity

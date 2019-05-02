@@ -1,34 +1,34 @@
 {
-    "name": "purescript-numerics",
-    "homepage": "https://github.com/proclivis/purescript-numerics",
-    "description": "Fixed width word and operations",
-    "authors": [
-	"Michael Jones <proclivis@gmail.com>"
-    ],
-    "license": "MIT",
-    "repository": {
-	"type": "git",
-	"url": "git://github.com/proclivis/purescript-numerics.git"
-    },
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "output",
-	"test",
-	"bower.json",
-	"package.json"
-    ],
-    "dependencies": {
-	"purescript-prelude": "^3.1.0",
-	"purescript-integers": "^3.1.0",
-	"purescript-rationals": "^3.1.1",
-	"purescript-uint": "^0.5.0",
-	"purescript-bigints": "^3.1.0"
-    },
-    "devDependencies": {
-        "purescript-psci-support": "^3.0.0",
-	"purescript-assert": "^3.0.0",
-	"purescript-console": "^3.0.0"
-    }
+  "name": "purescript-numerics",
+  "homepage": "https://github.com/proclivis/purescript-numerics",
+  "description": "Fixed width word and operations",
+  "authors": [
+    "Michael Jones <proclivis@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/proclivis/purescript-numerics.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output",
+    "test",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^4.1.1",
+    "purescript-integers": "^4.0.0",
+    "purescript-rationals": "^5.0.0",
+    "purescript-uint": "^5.1.1",
+    "purescript-bigints": "^4.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^4.0.0",
+    "purescript-assert": "^4.1.0",
+    "purescript-console": "^4.2.0"
+  }
 }
