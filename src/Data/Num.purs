@@ -5,7 +5,7 @@ module Data.Num
   , fromBigInt
   ) where
 
-import Prelude (id, ($), (<<<), class Eq, class Semiring, class Ring, class CommutativeRing)
+import Prelude (identity, ($), (<<<), class Eq, class Semiring, class Ring, class CommutativeRing)
 import Data.BigInt as BI
 import Data.Int as I
 import Data.Maybe (fromMaybe)
@@ -38,4 +38,4 @@ instance numBigInt :: Num BI.BigInt where
     negate = R.negate
     abs = O.abs
     signum = O.signum
-    fromBigInt = id
+    fromBigInt = identity
