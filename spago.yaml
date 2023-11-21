@@ -1,0 +1,16 @@
+package:
+  dependencies:
+    - console
+    - effect
+    - prelude
+    - uint
+    - rationals
+    - bigints
+  name: numerics
+  test:
+    dependencies: []
+    main: Test.Main
+workspace:
+  extra_packages: {}
+  package_set:
+    registry: 46.0.2
